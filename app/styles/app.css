@@ -1,8 +1,14 @@
 @font-face {
   font-family: Ahamono;
-  src: url("../assets/AHAMONO-Monospaced.ttf");
+  src: url("../assets/fonts/AHAMONO-Monospaced.ttf");
 }
 
 body {
   font-family: "Ahamono", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.landing-page-logo {
+  height: auto;
+  margin-top: 25px;
+  width: 100%;
 }
