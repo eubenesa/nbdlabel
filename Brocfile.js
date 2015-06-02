@@ -17,4 +17,8 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('node_modules/ember-cli-skeleton/vendor/skeleton/css/normalize.css');
+app.import('node_modules/ember-cli-skeleton/vendor/skeleton/css/skeleton.css');
+app.import('node_modules/ember-cli-font-awesome/node_modules/font-awesome/css/font-awesome.min.css');
+
 module.exports = app.toTree();

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: Ahamono;
+  src: url("../assets/AHAMONO-Monospaced.ttf");
+}
+
+body {
+  font-family: "Ahamono", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
