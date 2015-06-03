@@ -8,7 +8,37 @@ body {
 }
 
 .landing-page-logo {
-  height: auto;
-  margin-top: 25px;
-  width: 100%;
+  background: url('../assets/images/landing-page-logo-black-mobile.png') center center no-repeat;
+  height: 220px;
+  margin-top: 20px;
 }
+
+.waster-soundcloud {
+  margin-top: 35px;
+}
+
+/* Media Queries */
+/* Larger than mobile */
+@media (min-width: 400px) {
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .landing-page-logo {
+    background: url('../assets/images/landing-page-logo-black.png') center center no-repeat;
+    height: 400px;
+  }
+
+  .landing-page-logo:hover {
+    background: url('../assets/images/landing-page-logo-pink.png') center center no-repeat;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

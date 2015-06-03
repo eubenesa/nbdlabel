@@ -16,20 +16,7 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    },
-
-    SOUNDCLOUD_CLIENT_ID: process.env.SOUNDCLOUD_CLIENT_ID
-
-    // contentSecurityPolicy: {
-    //   'default-src': "'none'",
-    //   'script-src': "'self' http://connect.soundcloud.com 'unsafe-inline'",
-    //   'font-src': "'self'",
-    //   'connect-src': "'self'",
-    //   'img-src': "'self'",
-    //   'style-src': "'self' 'unsafe-inline'",
-    //   'media-src': "'self'",
-    //   'object-src': "'self'"
-    // }
+    }
   };
 
   if (environment === 'development') {
