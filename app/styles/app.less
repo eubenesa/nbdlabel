@@ -8,35 +8,37 @@ body {
 }
 
 .landing-page-logo {
-  background: url('../assets/images/landing-page-logo-black-mobile.png') center center no-repeat;
-  height: 220px;
-  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  object {
+    height: 171px;
+    width: 370px;
+  }
 }
 
 .waster-soundcloud {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
 /* Media Queries */
 /* Larger than mobile */
-@media (min-width: 400px) {
-}
+@media (min-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
-  .landing-page-logo {
-    background: url('../assets/images/landing-page-logo-black.png') center center no-repeat;
-    height: 400px;
+@media (min-width: 550px) {}
 
-    &:hover {
-      background: url('../assets/images/landing-page-logo-pink.png') center center no-repeat;
-      // cursor: pointer;
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .landing-page-logo {
+    object {
+      height: 355px;
+      width: 770px;
     }
   }
 }
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
