@@ -1,3 +1,4 @@
+// general
 @font-face {
   font-family: Ahamono;
   src: url("../assets/fonts/AHAMONO-Monospaced.ttf");
@@ -7,6 +8,17 @@ body {
   font-family: "Ahamono", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+a {
+  color: #1A1919;
+  text-decoration: none;
+
+  &:hover {
+    color: #DB518F;
+  }
+}
+// general end
+
+// landing page
 .landing-page-logo {
   align-items: center;
   display: flex;
@@ -14,14 +26,67 @@ body {
   margin-top: 80px;
 
   object {
-    height: 171px;
-    width: 370px;
+    height: 143px;
+    width: 310px;
   }
 }
 
 .landing-page-soundcloud {
   margin-top: 40px;
 }
+// landing page end
+
+// header
+.header-logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  margin-top: 30px;
+
+  object {
+    height: 111px;
+    width: 240px;
+  }
+}
+
+.header-links {
+  border: 1px solid #1A1919;
+
+  .header-link {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+
+    a {
+      font-size: 16px;
+      letter-spacing: 8px;
+
+      &.active {
+        color: #DB518F;
+
+        &:hover {
+          color: #1A1919;
+        }
+      }
+    }
+  }
+}
+// header end
+
+// footer
+.footer {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+// footer end
+
+// page-content
+.page-content {
+  margin-top: 45px;
+}
+// page-content end
 
 /* Media Queries */
 /* Larger than mobile */
@@ -44,10 +109,18 @@ body {
   .landing-page-soundcloud {
     margin-top: 80px;
   }
+
+  .footer {
+    bottom: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: fixed;
+    width: 100%;
+  }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
 
-/* Larger than Desktop HD */
+/* Larger than HD desktop */
 @media (min-width: 1200px) {}

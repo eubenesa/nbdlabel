@@ -18,6 +18,7 @@
 <metadata>
 Created by potrace 1.12, written by Peter Selinger 2001-2015
 </metadata>
+<a xmlns="http://www.w3.org/2000/svg" xlink:href="/home" xmlns:xlink="http://www.w3.org/1999/xlink" target="_top">
 <g transform="translate(0.000000,1672.000000) scale(0.100000,-0.100000)"
 stroke="none">
 <path d="M36465 16701 c-61 -16 -103 -46 -207 -152 -183 -187 -349 -410 -461
@@ -97,4 +98,5 @@ stroke="none">
 -24 100 -138 438 -196 578 -250 605 -635 947 -1154 1027 -132 21 -359 18 -490
 -5z"/>
 </g>
+</a>
 </svg>
