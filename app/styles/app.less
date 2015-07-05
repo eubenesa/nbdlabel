@@ -1,8 +1,9 @@
+@import 'index';
+@import 'header';
 @import 'about-contact';
 @import 'artists';
 @import 'listen';
 
-// general
 @font-face {
   font-family: Ahamono;
   src: url("../assets/fonts/AHAMONO-Monospaced.ttf");
@@ -20,65 +21,10 @@ a {
     color: #DB518F;
   }
 }
-// general end
 
-// landing page
-.landing-page-logo {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 130px;
-
-  object {
-    height: 143px;
-    width: 310px;
-  }
-}
-// landing page end
-
-// header
-.header-logo {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: 30px 0 70px;
-
-  object {
-    height: 111px;
-    width: 240px;
-  }
-}
-
-.header-links {
-  border: 1px solid #1A1919;
-
-  .header-link {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding-top: 3px;
-
-    a {
-      font-size: 16px;
-      letter-spacing: 8px;
-
-      &.active {
-        color: #DB518F;
-
-        &:hover {
-          color: #1A1919;
-        }
-      }
-    }
-  }
-}
-// header end
-
-// page-content
 .page-content {
   margin-top: 45px;
 }
-// page-content end
 
 /* Media Queries */
 /* Larger than mobile */
@@ -91,19 +37,10 @@ a {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-  .landing-page-logo {
-    object {
-      height: 355px;
-      width: 770px;
-    }
-  }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  .header-links {
-    padding: 0 100px;
-  }
 }
 
 /* Larger than HD desktop */

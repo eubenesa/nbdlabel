@@ -1,0 +1,41 @@
+.header-logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 70px;
+
+  object {
+    height: 111px;
+    width: 240px;
+  }
+}
+
+.header-links {
+  border: 1px solid #1A1919;
+
+  .header-link {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+
+    a {
+      font-size: 16px;
+      letter-spacing: 8px;
+
+      &.active {
+        color: #DB518F;
+
+        &:hover {
+          color: #1A1919;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .header-links {
+    padding: 0 100px;
+  }
+}
