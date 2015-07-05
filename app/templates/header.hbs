@@ -1,28 +1,28 @@
 <header>
   <div class="row">
     <div class="twelve columns">
-      <div class="header-logo">
+      <section class="header-logo">
         {{#link-to 'about'}}
           <object type="image/svg+xml" data="/assets/images/nbd-logo.svg">
             nbd, your browser doesn't support SVG.
           </object>
         {{/link-to}}
-      </div>
+      </section>
     </div>
   </div>
 
-  <div class="row header-links">
+  <nav class="row header-links">
     <div class="three columns header-link">
       {{link-to 'about' 'about'}}
     </div>
     <div class="three columns header-link">
-      {{link-to 'shop' 'shop'}}
+      {{link-to 'artists' 'artists'}}
     </div>
     <div class="three columns header-link">
-      {{link-to 'blog' 'blog'}}
+      {{link-to 'listen' 'listen'}}
     </div>
     <div class="three columns header-link">
       {{link-to 'contact' 'contact'}}
     </div>
-  </div>
+  </nav>
 </header>

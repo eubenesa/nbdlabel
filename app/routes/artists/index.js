@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  title: 'contact'
+  model: function() {
+    return this.store.findAll('artist');
+  }
 });
