@@ -1,4 +1,5 @@
 @import 'about-contact';
+@import 'artists';
 @import 'listen';
 
 // general
@@ -40,8 +41,7 @@ a {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-bottom: 70px;
-  margin-top: 30px;
+  margin: 30px 0 70px;
 
   object {
     height: 111px;
@@ -97,15 +97,13 @@ a {
       width: 770px;
     }
   }
-
-  .header-links {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  .header-links {
+    padding: 0 100px;
+  }
 }
 
 /* Larger than HD desktop */
