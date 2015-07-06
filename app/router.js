@@ -7,8 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
-  this.resource('artists', function() {
-  });
+  this.route('artists');
   this.route('listen');
   this.route('contact');
 });
