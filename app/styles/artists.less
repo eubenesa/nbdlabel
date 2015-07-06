@@ -4,15 +4,54 @@
     line-height: normal;
     margin-bottom: 12px;
     text-align: justify;
+  }
+}
 
-    &:last-of-type {
-      margin-bottom: 30px;
+.artist-name-blurb-social {
+  margin: 20px 0 30px;
+
+  nav {
+    a {
+      font-size: 1.1em;
     }
   }
 }
 
+/* Media Queries */
+@media (min-width: 320px) {
+  .artist {
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
 @media (min-width: 750px) {
+  .artist {
+    img {
+      height: auto;
+      width: auto;
+    }
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
   .artist {
     padding-left: 142px;
   }
+}
+
+/* Larger than HD desktop */
+@media (min-width: 1200px) {
 }
