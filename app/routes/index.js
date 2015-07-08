@@ -1,5 +1,14 @@
 import Ember from 'ember';
+import RouteMetaMixin from 'ember-cli-meta-tags/mixins/route-meta';
 
-export default Ember.Route.extend({
-  title: 'nbd label'
+var title = 'nbd label';
+
+export default Ember.Route.extend(RouteMetaMixin, {
+  title: title,
+  meta: {
+    'property': {
+      'og:title': title,
+      'og:url': 'http://www.nbdlabel.com/'
+    }
+  }
 });
