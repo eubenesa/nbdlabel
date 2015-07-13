@@ -17,7 +17,7 @@ export default Ember.Route.extend({
         id: 2,
         name: 'avid walker',
         imgUrl: 'assets/images/avid-walker.jpg',
-        blurb: 'Brendan Bleker and Jared Langerud. A couple pals making sun-soaked, melodic lo-fi pop in a bedroom studio. Playful but sincere, vulnerable yet confident, there is an air of melancholy woven into Avid Walker\'s songs that infuse their lightness and naivety with an emotional depth.',
+        blurb: 'Brendan Bleker and Jared Langerud. A couple pals making sun-soaked, melodic lo-fi pop in a bedroom studio. Playful but sincere, vulnerable yet confident, there is an air of melancholy woven into Avid Walker\'s songs that infuses their lightness and naivety with an emotional depth.',
         scUrl: 'https://soundcloud.com/avidwalker',
         instaUrl: 'https://instagram.com/avid_walker',
         fbUrl: 'https://www.facebook.com/avidwalkermusic',
