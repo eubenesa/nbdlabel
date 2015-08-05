@@ -1,14 +1,12 @@
-.artist {
+.artist-name-blurb-social {
+  margin: 20px 0 30px;
+
   p {
     font-size: 0.7em;
     line-height: normal;
     margin-bottom: 12px;
     text-align: justify;
   }
-}
-
-.artist-name-blurb-social {
-  margin: 20px 0 30px;
 
   nav {
     a {
@@ -20,8 +18,16 @@
 /* Media Queries */
 @media (min-width: 320px) {
   .artist {
+    .lazy-image-error-message {
+      font-size: 0.7em;
+    }
+
     img {
       height: auto;
+      width: 100%;
+    }
+
+    .artist-blurb {
       width: 100%;
     }
   }
@@ -33,25 +39,60 @@
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
+  .column {
+    margin-left: 0;
+  }
+
+  .artist {
+    padding-left: 100px;
+    width: 100% !important;
+
+    img {
+      height: auto;
+      width: auto;
+    }
+
+    .artist-blurb {
+      max-width: 333px;
+    }
+  }
+}
+
+@media (min-width: 667px) {
+  .artist {
+    padding-left: 136px;
+  }
+}
+
+@media (min-width: 736px) {
+  .artist {
+    padding-left: 156px;
+  }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
   .artist {
-    img {
-      height: auto;
-      width: auto;
-    }
+    padding-left: 166px;
   }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  .artist {
-    padding-left: 142px;
+  .artists {
+    padding-left: 100px;
+
+    .artist {
+      min-height: 478px;
+      padding-left: initial;
+      width: 48% !important;
+    }
   }
 }
 
 /* Larger than HD desktop */
 @media (min-width: 1200px) {
+  .artists {
+    padding-left: 135px;
+  }
 }

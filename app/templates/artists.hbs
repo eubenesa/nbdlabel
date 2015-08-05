@@ -2,44 +2,40 @@
   {{partial 'header'}}
 
   <div class="row page-content">
-    <div class="twelve columns">
-      <section class="artists">
-        {{#each model as |artist|}}
-          <div class="artist">
-            <div class="six columns">
-              {{#lazy-image url=artist.imgUrl errorText='Something went wrong, nbd.'}}
-                {{fa-icon "spinner" pulse=true}}
-              {{/lazy-image}}
-              <div class="six columns artist-name-blurb-social">
-                <p>{{artist.name}}</p>
-                <p>{{artist.blurb}}</p>
-                <nav>
-                  {{#if artist.scUrl}}
-                    <a href={{artist.scUrl}} target="_blank">
-                      {{fa-icon "soundcloud"}}
-                    </a>
-                  {{/if}}
-                  {{#if artist.instaUrl}}
-                    <a href={{artist.instaUrl}} target="_blank">
-                      {{fa-icon "instagram"}}
-                    </a>
-                  {{/if}}
-                  {{#if artist.fbUrl}}
-                    <a href={{artist.fbUrl}} target="_blank">
-                      {{fa-icon "facebook"}}
-                    </a>
-                  {{/if}}
-                  {{#if artist.twUrl}}
-                    <a href={{artist.twUrl}} target="_blank">
-                      {{fa-icon "twitter"}}
-                    </a>
-                  {{/if}}
-                </nav>
-              </div>
-            </div>
+    <section class="artists">
+      {{#each model as |artist|}}
+        <div class="one-half column artist">
+          {{#lazy-image url=artist.imgUrl errorText='Something went wrong, nbd.'}}
+            {{fa-icon "spinner" pulse=true}}
+          {{/lazy-image}}
+          <div class="twelve columns artist-name-blurb-social">
+            <p>{{artist.name}}</p>
+            <p class="artist-blurb">{{artist.blurb}}</p>
+            <nav>
+              {{#if artist.scUrl}}
+                <a href={{artist.scUrl}} target="_blank">
+                  {{fa-icon "soundcloud"}}
+                </a>
+              {{/if}}
+              {{#if artist.instaUrl}}
+                <a href={{artist.instaUrl}} target="_blank">
+                  {{fa-icon "instagram"}}
+                </a>
+              {{/if}}
+              {{#if artist.fbUrl}}
+                <a href={{artist.fbUrl}} target="_blank">
+                  {{fa-icon "facebook"}}
+                </a>
+              {{/if}}
+              {{#if artist.twUrl}}
+                <a href={{artist.twUrl}} target="_blank">
+                  {{fa-icon "twitter"}}
+                </a>
+              {{/if}}
+            </nav>
           </div>
-        {{/each}}
-      </section>
-    </div>
+        </div>
+      {{/each}}
+    </section>
   </div>
 </div>
