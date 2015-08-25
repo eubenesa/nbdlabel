@@ -5,9 +5,14 @@
     <section class="artists">
       {{#each model as |artist|}}
         <div class="one-half column artist">
-          {{#lazy-image url=artist.imgUrl errorText='Something went wrong, nbd.'}}
-            {{fa-icon "spinner" pulse=true}}
-          {{/lazy-image}}
+          <img src={{artist.imgUrl}} alt={{artist.name}}>
+          {{#if artist.photoBy}}
+            {{#if artist.photoByUrl}}
+              <p class="photo-credit">{{fa-icon "camera-retro"}} by <a href={{artist.photoByUrl}} target="_blank">{{artist.photoBy}}</a></p>
+            {{else}}
+              <p class="photo-credit">{{fa-icon "camera-retro"}} by {{artist.photoBy}}</p>
+            {{/if}}
+          {{/if}}
           <div class="twelve columns artist-name-blurb-social">
             <p>{{artist.name}}</p>
             <p class="artist-blurb">{{artist.blurb}}</p>
