@@ -8,9 +8,9 @@
           <img src={{artist.imgUrl}} alt={{artist.name}}>
           {{#if artist.photoBy}}
             {{#if artist.photoByUrl}}
-              <p class="photo-credit">{{fa-icon "camera-retro"}} by <a href={{artist.photoByUrl}} target="_blank">{{artist.photoBy}}</a></p>
+              <p class="photo-credit">{{fa-icon icon="camera-retro"}} by <a href={{artist.photoByUrl}} target="_blank">{{artist.photoBy}}</a></p>
             {{else}}
-              <p class="photo-credit">{{fa-icon "camera-retro"}} by {{artist.photoBy}}</p>
+              <p class="photo-credit">{{fa-icon icon="camera-retro"}} by {{artist.photoBy}}</p>
             {{/if}}
           {{/if}}
           <div class="twelve columns artist-name-blurb-social">
@@ -19,22 +19,22 @@
             <nav>
               {{#if artist.scUrl}}
                 <a href={{artist.scUrl}} target="_blank">
-                  {{fa-icon "soundcloud"}}
+                  {{fa-icon icon="soundcloud"}}
                 </a>
               {{/if}}
               {{#if artist.instaUrl}}
                 <a href={{artist.instaUrl}} target="_blank">
-                  {{fa-icon "instagram"}}
+                  {{fa-icon icon="instagram"}}
                 </a>
               {{/if}}
               {{#if artist.fbUrl}}
                 <a href={{artist.fbUrl}} target="_blank">
-                  {{fa-icon "facebook"}}
+                  {{fa-icon icon="facebook"}}
                 </a>
               {{/if}}
               {{#if artist.twUrl}}
                 <a href={{artist.twUrl}} target="_blank">
-                  {{fa-icon "twitter"}}
+                  {{fa-icon icon="twitter"}}
                 </a>
               {{/if}}
             </nav>
