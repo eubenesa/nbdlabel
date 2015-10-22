@@ -22,6 +22,11 @@
                   {{fa-icon icon="soundcloud"}}
                 </a>
               {{/if}}
+              {{#if artist.bcUrl}}
+                <a href={{artist.bcUrl}} target="_blank">
+                  {{fa-icon icon="play"}}
+                </a>
+              {{/if}}
               {{#if artist.instaUrl}}
                 <a href={{artist.instaUrl}} target="_blank">
                   {{fa-icon icon="instagram"}}
