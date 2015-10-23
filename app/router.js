@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('artists');
   this.route('listen');
   this.route('contact');
+  this.route('releases');
 });
 
 export default Router;

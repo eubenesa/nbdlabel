@@ -1,0 +1,87 @@
+.release {
+  .release-image-container {
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .release-description {
+    margin-bottom: 30px;
+
+    p {
+      font-size: 0.7em;
+      line-height: normal;
+      margin-bottom: 15px;
+      text-align: justify;
+
+      &.release-id, &.release-artist-album-format {
+        margin-bottom: 0;
+      }
+
+      &.release-date {
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+
+/* Media Queries */
+/* Larger than mobile */
+@media (min-width: 400px) {
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .release {
+    .release-image-container, .release-description {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .release {
+    .release-image-container {
+      width: 48%;
+    }
+
+    .release-description {
+      margin-left: 4%;
+      width: 48%;
+    }
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .release {
+    .release-image-container {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: initial;
+        height: initial;
+      }
+    }
+
+    .release-description {
+      padding-right: 75px;
+    }
+  }
+}
+
+/* Larger than HD desktop */
+@media (min-width: 1200px) {
+  .release {
+    .release-description {
+      padding-right: 115px;
+    }
+  }
+}
