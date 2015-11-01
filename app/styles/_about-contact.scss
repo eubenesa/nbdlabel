@@ -1,27 +1,33 @@
 .about, .contact {
-  background-color: #DB518F;
+  background-color: $pink;
   height: 180px;
   width: 100%;
 }
 
 .about-footer, .contact-footer {
-  margin: 18px 80px 30px 0;
+  margin-top: 18px;
+  margin-right: 80px;
+  margin-bottom: 30px;
   text-align: right;
 
   p {
-    font-size: 0.7em;
+    font-size: 1rem;
     line-height: normal;
     margin-bottom: 0;
   }
+}
 
-  nav {
-    a {
-      font-size: 1.1em;
-    }
+.contact-footer {
+  .copyright {
+    margin-bottom: 8px;
   }
 
-  .design-dev-credits {
-    margin-top: 8px;
+  nav {
+    margin-bottom: 8px;
+
+    a {
+      font-size: 1.6rem;
+    }
   }
 }
 

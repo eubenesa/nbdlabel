@@ -1,0 +1,98 @@
+.artist {
+  margin-bottom: 30px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .artist-info {
+    p {
+      font-size: 1rem;
+      line-height: normal;
+      margin-bottom: 12px;
+      text-align: justify;
+
+      &.photo-credit {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+      }
+    }
+
+    nav {
+      text-align: left;
+
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+
+/* Media Queries */
+/* Larger than mobile */
+@media (min-width: 400px) {
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .artist {
+    margin-left: 0;
+    text-align: center;
+    width: 100% !important;
+
+    img {
+      width: initial;
+      height: initial;
+    }
+
+    .artist-info {
+      padding-right: 55px;
+      padding-left: 55px;
+    }
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .artist {
+    .artist-info {
+      padding-right: 142px;
+      padding-left: 142px;
+    }
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .artist {
+    min-height: 455px;
+    margin-left: 4%;
+    width: 48% !important;
+
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+
+    .artist-info {
+      padding-right: 28px;
+      padding-left: 28px;
+    }
+  }
+}
+
+/* Larger than HD desktop */
+@media (min-width: 1200px) {
+  .artists {
+    padding-right: 95px;
+    padding-left: 95px;
+
+    .artist {
+      .artist-info {
+        padding-right: 22px;
+        padding-left: 22px;
+      }
+    }
+  }
+}

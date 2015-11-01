@@ -1,11 +1,8 @@
 .listen {
-  margin-bottom: 30px;
-}
-
-.listen-soundcloud {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 
   iframe {
     width: 100%;
@@ -23,7 +20,7 @@
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-  .listen-soundcloud {
+  .listen {
     iframe {
       width: 90%;
     }
@@ -32,7 +29,7 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  .listen-soundcloud {
+  .listen {
     iframe {
       width: 70%;
     }

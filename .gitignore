@@ -15,6 +15,6 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
-.divshot-cache
 
 .env
+.pagefrontrc

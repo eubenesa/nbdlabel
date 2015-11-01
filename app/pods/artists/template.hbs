@@ -1,44 +1,44 @@
 <div class="container">
   {{nbd-header}}
 
-  <div class="row page-content">
-    <section class="artists">
+  <div class="page-content">
+    <section class="row artists">
       {{#each model as |artist|}}
         <div class="one-half column artist">
           <img src={{artist.imgUrl}} alt={{artist.name}}>
-          {{#if artist.photoBy}}
-            {{#if artist.photoByUrl}}
-              <p class="photo-credit">{{fa-icon icon="camera-retro"}} by <a href={{artist.photoByUrl}} target="_blank">{{artist.photoBy}}</a></p>
-            {{else}}
-              <p class="photo-credit">{{fa-icon icon="camera-retro"}} by {{artist.photoBy}}</p>
+          <div class="twelve columns artist-info">
+            {{#if artist.photoByName}}
+              {{#if artist.photoByUrl}}
+                <p class="photo-credit">{{fa-icon icon="camera-retro"}} by <a href={{artist.photoByUrl}} target="_blank">{{artist.photoByName}}</a></p>
+              {{else}}
+                <p class="photo-credit">{{fa-icon icon="camera-retro"}} by {{artist.photoByName}}</p>
+              {{/if}}
             {{/if}}
-          {{/if}}
-          <div class="twelve columns artist-name-blurb-social">
             <p>{{artist.name}}</p>
-            <p class="artist-blurb">{{artist.blurb}}</p>
+            <p>{{artist.blurb}}</p>
             <nav>
-              {{#if artist.scUrl}}
-                <a href={{artist.scUrl}} target="_blank">
+              {{#if artist.soundcloudUrl}}
+                <a href={{artist.soundcloudUrl}} target="_blank">
                   {{fa-icon icon="soundcloud"}}
                 </a>
               {{/if}}
-              {{#if artist.bcUrl}}
-                <a href={{artist.bcUrl}} target="_blank">
+              {{#if artist.bandcampUrl}}
+                <a href={{artist.bandcampUrl}} target="_blank">
                   {{fa-icon icon="play"}}
                 </a>
               {{/if}}
-              {{#if artist.instaUrl}}
-                <a href={{artist.instaUrl}} target="_blank">
+              {{#if artist.instagramUrl}}
+                <a href={{artist.instagramUrl}} target="_blank">
                   {{fa-icon icon="instagram"}}
                 </a>
               {{/if}}
-              {{#if artist.fbUrl}}
-                <a href={{artist.fbUrl}} target="_blank">
+              {{#if artist.facebookUrl}}
+                <a href={{artist.facebookUrl}} target="_blank">
                   {{fa-icon icon="facebook"}}
                 </a>
               {{/if}}
-              {{#if artist.twUrl}}
-                <a href={{artist.twUrl}} target="_blank">
+              {{#if artist.twitterUrl}}
+                <a href={{artist.twitterUrl}} target="_blank">
                   {{fa-icon icon="twitter"}}
                 </a>
               {{/if}}

@@ -5,8 +5,8 @@
   margin-top: 130px;
 
   object {
-    height: 143px;
-    width: 310px;
+    height: 145px;
+    width: auto;
   }
 }
 
@@ -23,14 +23,20 @@
 @media (min-width: 750px) {
   .index {
     object {
-      height: 355px;
-      width: 770px;
+      height: 305px;
+      width: auto;
     }
   }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  .index {
+    object {
+      height: 355px;
+      width: auto;
+    }
+  }
 }
 
 /* Larger than HD desktop */

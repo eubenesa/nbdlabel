@@ -6,11 +6,6 @@ module.exports = function(defaults) {
     // Add options here
     dotEnv: {
       clientAllowedKeys: ['SOUNDCLOUD_CLIENT_ID']
-    },
-    lessOptions: {
-      paths: [
-        'styles'
-      ]
     }
   });
 

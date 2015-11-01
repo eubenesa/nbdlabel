@@ -1,4 +1,6 @@
 .release {
+  margin-bottom: 30px;
+
   .release-image-container {
     margin-bottom: 20px;
 
@@ -9,12 +11,10 @@
   }
 
   .release-description {
-    margin-bottom: 30px;
-
     p {
-      font-size: 0.7em;
+      font-size: 1rem;
       line-height: normal;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       text-align: justify;
 
       &.release-id, &.release-artist-album-format {
@@ -23,6 +23,12 @@
 
       &.release-date {
         text-transform: lowercase;
+      }
+    }
+
+    nav {
+      a {
+        font-size: 1.6rem;
       }
     }
   }
@@ -37,8 +43,22 @@
 @media (min-width: 550px) {
   .release {
     .release-image-container, .release-description {
-      margin-left: 0;
       width: 100%;
+    }
+
+    .release-image-container {
+      text-align: center;
+
+      img {
+        width: initial;
+        height: auto;
+      }
+    }
+
+    .release-description {
+      margin-left: 0;
+      padding-right: 55px;
+      padding-left: 55px;
     }
   }
 }
@@ -52,6 +72,7 @@
 
     .release-description {
       margin-left: 4%;
+      padding: 0;
       width: 48%;
     }
   }
@@ -60,17 +81,6 @@
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .release {
-    .release-image-container {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-
-      img {
-        width: initial;
-        height: initial;
-      }
-    }
-
     .release-description {
       padding-right: 75px;
     }
