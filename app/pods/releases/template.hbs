@@ -6,7 +6,7 @@
       {{#each model as |release|}}
         <div class="row release u-cf">
           <div class="one-half column release-image-container">
-            <img src={{release.imgUrl}} alt={{release.artist}}>
+            <img src={{release.image}} alt={{release.artist}}>
           </div>
           <div class="one-half column release-description">
             <p class="release-id">nbd00{{release.id}}</p>
@@ -20,18 +20,18 @@
               <p>{{release.blurbP3}}</p>
             {{/if}}
             <nav>
-              {{#if release.bandcampUrl}}
-                <a href={{release.bandcampUrl}} target="_blank">
+              {{#if release.bandcamp}}
+                <a href={{release.bandcamp}} target="_blank">
                   {{fa-icon icon="play"}}
                 </a>
               {{/if}}
-              {{#if release.itunesUrl}}
-                <a href={{release.itunesUrl}} target="_blank">
+              {{#if release.itunes}}
+                <a href={{release.itunes}} target="_blank">
                   {{fa-icon icon="apple"}}
                 </a>
               {{/if}}
-              {{#if release.spotifyUrl}}
-                <a href={{release.spotifyUrl}} target="_blank">
+              {{#if release.spotify}}
+                <a href={{release.spotify}} target="_blank">
                   {{fa-icon icon="spotify"}}
                 </a>
               {{/if}}
