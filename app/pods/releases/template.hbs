@@ -6,19 +6,13 @@
       {{#each model as |release|}}
         <div class="row release u-cf">
           <div class="one-half column release-image-container">
-            <img src={{release.image}} alt={{release.artist}}>
+            <img src={{release.cover}} alt={{release.artist}}>
           </div>
           <div class="one-half column release-description">
             <p class="release-id">nbd00{{release.id}}</p>
-            <p class="release-artist-album-format">{{release.artist}} "{{release.album}}" {{release.format}}</p>
+            <p class="release-artist-album-format">{{release.artist}} "{{release.title}}" {{release.format}}</p>
             <p class="release-date">released {{moment-format release.releasedAt 'MMMM DD YYYY'}}</p>
-            <p>{{release.blurbP1}}</p>
-            {{#if release.blurbP2}}
-              <p>{{release.blurbP2}}</p>
-            {{/if}}
-            {{#if release.blurbP3}}
-              <p>{{release.blurbP3}}</p>
-            {{/if}}
+            <p>{{{release.blurb}}}</p>
             <nav>
               {{#if release.bandcamp}}
                 <a href={{release.bandcamp}} target="_blank">
