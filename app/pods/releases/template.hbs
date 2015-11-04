@@ -9,9 +9,9 @@
             <img src={{release.cover}} alt={{release.artist}}>
           </div>
           <div class="one-half column release-description">
-            <p class="release-id">nbd00{{release.id}}</p>
+            <p class="release-id">{{release.nbdId}}</p>
             <p class="release-artist-album-format">{{release.artist}} "{{release.title}}" {{release.format}}</p>
-            <p class="release-date">released {{moment-format release.releasedAt 'MMMM DD YYYY'}}</p>
+            <p class="release-date">Released {{moment-format release.releasedAt 'MMMM DD YYYY'}}</p>
             <p>{{{release.blurb}}}</p>
             <nav>
               {{#if release.bandcamp}}

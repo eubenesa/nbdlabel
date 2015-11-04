@@ -13,7 +13,11 @@
       margin-bottom: 12px;
       text-align: justify;
 
-      &.photo-credit {
+      &.photo-by, &.artist-name {
+        text-transform: lowercase;
+      }
+
+      &.photo-by {
         font-size: 0.9rem;
         margin-bottom: 15px;
       }

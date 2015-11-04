@@ -9,12 +9,12 @@
           <div class="twelve columns artist-info">
             {{#if artist.photoBy}}
               {{#if artist.photoByLink}}
-                <p class="photo-credit">{{fa-icon icon="camera-retro"}} by <a href={{artist.photoByLink}} target="_blank">{{artist.photoBy}}</a></p>
+                <p class="photo-by">{{fa-icon icon="camera-retro"}} by <a href={{artist.photoByLink}} target="_blank">{{artist.photoBy}}</a></p>
               {{else}}
-                <p class="photo-credit">{{fa-icon icon="camera-retro"}} by {{artist.photoBy}}</p>
+                <p class="photo-by">{{fa-icon icon="camera-retro"}} by {{artist.photoBy}}</p>
               {{/if}}
             {{/if}}
-            <p>{{artist.name}}</p>
+            <p class="artist-name">{{artist.name}}</p>
             <p>{{artist.blurb}}</p>
             <nav>
               {{#if artist.soundcloud}}
