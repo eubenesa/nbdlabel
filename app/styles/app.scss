@@ -1,5 +1,6 @@
+@import "fontello";
+
 @import "colours";
-@import "typography";
 
 @import "index";
 @import "header";
@@ -10,7 +11,7 @@
 
 @font-face {
   font-family: Ahamono;
-  src: url("../assets/fonts/AHAMONO-Monospaced.ttf");
+  src: url("/assets/fonts/AHAMONO-Monospaced.ttf");
 }
 
 body {
