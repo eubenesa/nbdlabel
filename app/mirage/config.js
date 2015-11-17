@@ -3,8 +3,8 @@ export default function() {
     return {
       data: db.artists.map(attrs => (
         {
-          type: 'artists',
           id: attrs.id,
+          type: 'artists',
           attributes: attrs
         }
       ))
@@ -15,8 +15,8 @@ export default function() {
     return {
       data: db.releases.map(attrs => (
         {
-          type: 'releases',
           id: attrs.id,
+          type: 'releases',
           attributes: attrs
         }
       ))
