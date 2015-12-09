@@ -8,17 +8,15 @@
 
   .artist-info {
     p {
-      font-size: 1rem;
-      line-height: normal;
+      @include nbd-body;
       margin-bottom: 12px;
-      text-align: justify;
 
       &.photo-by, &.artist-name {
         text-transform: lowercase;
       }
 
       &.photo-by {
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-bottom: 15px;
       }
     }

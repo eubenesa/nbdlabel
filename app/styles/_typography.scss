@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+@font-face {
+  font-family: Ahamono;
+  src: url(/assets/fonts/AHAMONO-Monospaced.ttf);
+}
+
+$roboto: "Roboto", sans-serif;
+$ahamono: "Ahamono", monospace;
+
+$light: 300;
+
+@mixin nbd-body {
+  font-size: 1.2rem;
+  font-weight: $light;
+  letter-spacing: .5px;
+  line-height: 1.15;
+  text-align: justify;
+}

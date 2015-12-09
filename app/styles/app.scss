@@ -2,6 +2,7 @@
 @import "fontello";
 
 @import "colours";
+@import "typography";
 
 @import "index";
 @import "header";
@@ -10,14 +11,9 @@
 @import "listen";
 @import "releases";
 
-@font-face {
-  font-family: Ahamono;
-  src: url("/assets/fonts/AHAMONO-Monospaced.ttf");
-}
-
 body {
   color: $black;
-  font-family: "Ahamono", monospace;
+  font-family: $roboto;
 }
 
 a {

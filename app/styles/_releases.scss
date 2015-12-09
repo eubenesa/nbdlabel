@@ -13,10 +13,8 @@
 
   .release-description {
     p {
-      font-size: 1rem;
-      line-height: normal;
+      @include nbd-body;
       margin-bottom: 12px;
-      text-align: justify;
 
       &.release-id, &.release-artist-album-format {
         margin-bottom: 0;
