@@ -16,9 +16,10 @@ export default DS.Model.extend({
     let id = this.get('id');
     if (id < 10) {
       id = 'nbd00' + id;
-    } else if (id < 100) {
-      id = 'nbd0' + id;
     }
+    // } else if (id < 100) {
+    //   id = 'nbd0' + id;
+    // }
     return id;
   })
 });
