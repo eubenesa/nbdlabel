@@ -1,36 +1,38 @@
-.artist {
+.artists {
   margin-bottom: 30px;
 
-  img {
-    width: 100%;
-    height: auto;
-  }
+  .artist {
+    margin-bottom: 10px;
+    margin-left: 0;
+    position: relative;
 
-  .artist-info {
-    p {
-      @include nbd-body;
-      margin-bottom: 12px;
-
-      &.photo-by, &.artist-name {
-        text-transform: lowercase;
-      }
-
-      &.photo-by {
-        font-size: 1rem;
-        margin-bottom: 15px;
-      }
+    img {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      width: 255px;
+      height: 255px;
+      transition: opacity 750ms ease-in;
     }
 
-    nav {
-      text-align: left;
+    p {
+      color: $white;
+      font-family: $ahamono;
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      position: absolute;
+      bottom: 8px;
+      left: 75px;
+      text-transform: lowercase;
+    }
 
-      a {
-        font-size: 1.6rem;
+    &:hover {
+      img {
+        opacity: 0.25;
       }
     }
   }
 }
-
 
 /* Media Queries */
 /* Larger than mobile */
@@ -39,47 +41,41 @@
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-  .artist {
-    margin-left: 0;
-    text-align: center;
-    width: 100% !important;
+  .artists {
+    .artist {
+      width: 100%;
 
-    img {
-      width: initial;
-      height: initial;
-    }
-
-    .artist-info {
-      padding-right: 55px;
-      padding-left: 55px;
+      p {
+        left: 130px;
+      }
     }
   }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-  .artist {
-    .artist-info {
-      padding-right: 142px;
-      padding-left: 142px;
+  .artists {
+    .artist {
+      p {
+        left: 215px;
+      }
     }
   }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  .artist {
-    min-height: 490px;
-    margin-left: 4%;
-    width: 48% !important;
+  .artists {
+    margin-bottom: 0;
+    padding-right: 5px;
+    padding-left: 5px;
 
-    &:nth-child(odd) {
-      margin-left: 0;
-    }
+    .artist {
+      width: 33.33%;
 
-    .artist-info {
-      padding-right: 28px;
-      padding-left: 28px;
+      p {
+        left: 40px;
+      }
     }
   }
 }
@@ -87,14 +83,7 @@
 /* Larger than HD desktop */
 @media (min-width: 1200px) {
   .artists {
-    padding-right: 95px;
-    padding-left: 95px;
-
-    .artist {
-      .artist-info {
-        padding-right: 22px;
-        padding-left: 22px;
-      }
-    }
+    padding-right: 85px;
+    padding-left: 85px;
   }
 }

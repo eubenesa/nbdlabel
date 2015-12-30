@@ -1,0 +1,41 @@
+<div class="container">
+  {{nbd-header}}
+
+  <section class="row artist-details">
+    <div class="one-half column artist-image-container">
+      <img src={{model.photo}} alt={{model.name}}>
+      <p>Photo by {{model.photoBy}}</p>
+    </div>
+    <div class="one-half column artist-info">
+      <p class="artist-name">{{model.name}}</p>
+      <p>{{model.blurb}}</p>
+      <nav>
+        {{#if model.soundcloud}}
+          <a href={{model.soundcloud}} target="_blank">
+            {{fa-icon icon="soundcloud"}}
+          </a>
+        {{/if}}
+        {{#if model.bandcamp}}
+          <a href={{model.bandcamp}} target="_blank">
+            <i class="icon-bandcamp"></i>
+          </a>
+        {{/if}}
+        {{#if model.instagram}}
+          <a href={{model.instagram}} target="_blank">
+            {{fa-icon icon="instagram"}}
+          </a>
+        {{/if}}
+        {{#if model.facebook}}
+          <a href={{model.facebook}} target="_blank">
+            {{fa-icon icon="facebook"}}
+          </a>
+        {{/if}}
+        {{#if model.twitter}}
+          <a href={{model.twitter}} target="_blank">
+            {{fa-icon icon="twitter"}}
+          </a>
+        {{/if}}
+      </nav>
+    </div>
+  </section>
+</div>

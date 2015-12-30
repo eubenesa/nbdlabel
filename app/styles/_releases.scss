@@ -1,33 +1,26 @@
-.release {
+.releases {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
 
-  .release-image-container {
-    margin-bottom: 20px;
+  .release {
+    margin-bottom: 10px;
+    margin-left: 0;
 
     img {
-      box-shadow: 1px 1px 5px #ddd;
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  .release-description {
-    p {
-      @include nbd-body;
-      margin-bottom: 12px;
-
-      &.release-id, &.release-artist-album-format {
-        margin-bottom: 0;
-      }
-
-      &.release-artist-album-format, &.release-date {
-        text-transform: lowercase;
-      }
+      box-shadow: 1px 1px 5px $gray;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      width: 255px;
+      height: 255px;
+      transition: opacity 750ms ease-in;
     }
 
-    nav {
-      a {
-        font-size: 1.6rem;
+    &:hover {
+      img {
+        opacity: 0.25;
       }
     }
   }
@@ -40,63 +33,34 @@
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-  .release {
-    .release-image-container, .release-description {
+  .releases {
+    .release {
       width: 100%;
-    }
-
-    .release-image-container {
-      text-align: center;
-
-      img {
-        width: initial;
-        height: auto;
-      }
-    }
-
-    .release-description {
-      margin-left: 0;
-      padding-right: 55px;
-      padding-left: 55px;
     }
   }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-  .release {
-    .release-image-container {
-      // width: 48%;
-    }
-
-    .release-description {
-      padding-right: 142px;
-      padding-left: 142px;
-    }
-  }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  .release {
-    .release-image-container {
-      width: 48%;
-    }
+  .releases {
+    margin-bottom: 0;
+    padding-right: 5px;
+    padding-left: 5px;
 
-    .release-description {
-      margin-left: 4%;
-      padding-right: 45px;
-      padding-left: 0;
-      width: 48%;
+    .release {
+      width: 33.33%;
     }
   }
 }
 
 /* Larger than HD desktop */
 @media (min-width: 1200px) {
-  .release {
-    .release-description {
-      padding-right: 122px;
-    }
+  .releases {
+    padding-right: 85px;
+    padding-left: 85px;
   }
 }

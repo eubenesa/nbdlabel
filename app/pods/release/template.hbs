@@ -1,0 +1,32 @@
+<div class="container">
+  {{nbd-header}}
+
+  <section class="row release-details">
+    <div class="one-half column release-image-container">
+      <img src={{model.cover}} alt="{{model.artist}}: {{model.title}}">
+    </div>
+    <div class="one-half column release-info">
+      <p class="nbd-id">{{model.nbdId}}</p>
+      <p class="artist-title-format">{{model.artist}}: <i>{{model.title}}</i> {{model.format}}</p>
+      <p class="date">Released {{moment-format model.releasedAt 'MMMM DD YYYY'}}</p>
+      <p>{{{model.blurb}}}</p>
+      <nav>
+        {{#if model.bandcamp}}
+          <a href={{model.bandcamp}} target="_blank">
+            <i class="icon-bandcamp"></i>
+          </a>
+        {{/if}}
+        {{#if model.itunes}}
+          <a href={{model.itunes}} target="_blank">
+            {{fa-icon icon="apple"}}
+          </a>
+        {{/if}}
+        {{#if model.spotify}}
+          <a href={{model.spotify}} target="_blank">
+            {{fa-icon icon="spotify"}}
+          </a>
+        {{/if}}
+      </nav>
+    </div>
+  </section>
+</div>

@@ -1,7 +1,6 @@
 .about, .contact {
   background-color: $pink;
   height: 180px;
-  width: 100%;
 }
 
 .about-footer, .contact-footer {
@@ -19,13 +18,22 @@
 }
 
 .contact-footer {
-  .email, .development-by {
-    margin-bottom: 2px;
+  p {
+    text-transform: lowercase;
+
+    &:nth-child(even) {
+      margin-bottom: 2px;
+    }
   }
 
   nav {
     a {
       font-size: 1.6rem;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -48,6 +56,11 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  .about, .contact {
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+
   .about-footer, .contact-footer {
     margin-right: 180px;
   }
@@ -55,4 +68,8 @@
 
 /* Larger than HD desktop */
 @media (min-width: 1200px) {
+  .about, .contact {
+    margin-right: 85px;
+    margin-left: 85px;
+  }
 }

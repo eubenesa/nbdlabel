@@ -1,38 +1,13 @@
 <div class="container">
   {{nbd-header}}
 
-  <div class="page-content">
-    <section class="releases">
-      {{#each model as |release|}}
-        <div class="row release u-cf">
-          <div class="one-half column release-image-container">
-            <img src={{release.cover}} alt={{release.artist}}>
-          </div>
-          <div class="one-half column release-description">
-            <p class="release-id">{{release.nbdId}}</p>
-            <p class="release-artist-album-format">{{release.artist}} "{{release.title}}" {{release.format}}</p>
-            <p class="release-date">Released {{moment-format release.releasedAt 'MMMM DD YYYY'}}</p>
-            <p>{{{release.blurb}}}</p>
-            <nav>
-              {{#if release.bandcamp}}
-                <a href={{release.bandcamp}} target="_blank">
-                  <i class="icon-bandcamp"></i>
-                </a>
-              {{/if}}
-              {{#if release.itunes}}
-                <a href={{release.itunes}} target="_blank">
-                  {{fa-icon icon="apple"}}
-                </a>
-              {{/if}}
-              {{#if release.spotify}}
-                <a href={{release.spotify}} target="_blank">
-                  {{fa-icon icon="spotify"}}
-                </a>
-              {{/if}}
-            </nav>
-          </div>
-        </div>
-      {{/each}}
-    </section>
-  </div>
+  <section class="row releases">
+    {{#each model as |release|}}
+      <div class="one-third column release">
+        {{#link-to 'release' release}}
+          <img src={{release.cover}} alt="{{release.artist}}: {{release.title}}">
+        {{/link-to}}
+      </div>
+    {{/each}}
+  </section>
 </div>

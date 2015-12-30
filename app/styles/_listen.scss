@@ -1,8 +1,6 @@
 .listen {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   margin-bottom: 30px;
+  text-align: center;
 
   iframe {
     width: 100%;
@@ -22,7 +20,7 @@
 @media (min-width: 750px) {
   .listen {
     iframe {
-      width: 90%;
+      width: 95%;
     }
   }
 }
@@ -31,11 +29,16 @@
 @media (min-width: 1000px) {
   .listen {
     iframe {
-      width: 70%;
+      width: 92%;
     }
   }
 }
 
 /* Larger than HD desktop */
 @media (min-width: 1200px) {
+  .listen {
+    iframe {
+      width: 82%;
+    }
+  }
 }

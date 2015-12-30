@@ -1,0 +1,165 @@
+.artist-details {
+  margin-bottom: 30px;
+
+  .artist-image-container {
+    margin-bottom: 20px;
+    position: relative;
+
+    img {
+      box-shadow: 1px 1px 5px $gray;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      color: $white;
+      font-family: $ahamono;
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      opacity: 0;
+      position: absolute;
+      bottom: 8px;
+      left: 35px;
+      text-transform: lowercase;
+      transition: opacity 750ms ease-out;
+    }
+
+    &:hover {
+      p {
+        opacity: 1;
+      }
+    }
+  }
+
+  .artist-info {
+    p {
+      @include nbd-body;
+
+      margin-bottom: 12px;
+
+      &.artist-name {
+        text-transform: lowercase;
+      }
+    }
+
+    nav {
+      a {
+        font-size: 1.6rem;
+        margin-right: 8px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Media Queries */
+/* Larger than mobile */
+@media (min-width: 400px) {
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .artist-details {
+    .artist-image-container {
+      width: 100%;
+
+      img {
+        margin-right: auto;
+        margin-left: auto;
+        width: 400px;
+        height: 400px;
+      }
+
+      p {
+        left: 55px;
+      }
+    }
+
+    .artist-info {
+      margin-left: 0;
+      padding-right: 20px;
+      padding-left: 20px;
+      width: 100%;
+    }
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .artist-details {
+    .artist-image-container {
+      p {
+        left: 140px;
+      }
+    }
+
+    .artist-info {
+      padding-right: 105px;
+      padding-left: 105px;
+    }
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .artist-details {
+    margin-bottom: 0;
+
+    .artist-image-container {
+      margin-bottom: 0;
+      width: 48%;
+
+      img {
+        width: 320px;
+        height: 320px;
+      }
+
+      p {
+        left: 70px;
+      }
+    }
+
+    .artist-info {
+      margin-left: 4%;
+      padding-right: 40px;
+      padding-left: 0;
+      position: relative;
+      width: 48%;
+      height: 320px;
+
+      nav {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+/* Larger than HD desktop */
+@media (min-width: 1200px) {
+  .artist-details {
+    .artist-image-container {
+      text-align: right;
+
+      img {
+        margin-right: 0;
+        margin-left: auto;
+        width: 372px;
+        height: 372px;
+      }
+
+      p {
+        left: 125px;
+      }
+    }
+
+    .artist-info {
+      height: 372px;
+      padding-right: 95px;
+    }
+  }
+}

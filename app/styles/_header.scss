@@ -1,9 +1,7 @@
 .header-logo {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   margin-top: 30px;
   margin-bottom: 70px;
+  text-align: center;
 
   object {
     height: 110px;
@@ -46,8 +44,8 @@
   .header-links {
     .header-link {
       display: inline;
-      margin-right: 10px;
-      margin-left: 10px;
+      margin-right: 14px;
+      margin-left: 14px;
     }
   }
 }
@@ -56,8 +54,8 @@
 @media (min-width: 1000px) {
   .header-links {
     .header-link {
-      margin-right: 10px;
-      margin-left: 10px;
+      margin-right: 32px;
+      margin-left: 32px;
     }
   }
 }
@@ -66,8 +64,8 @@
 @media (min-width: 1200px) {
   .header-links {
     .header-link {
-      margin-right: 20px;
-      margin-left: 20px;
+      margin-right: 38px;
+      margin-left: 38px;
     }
   }
 }

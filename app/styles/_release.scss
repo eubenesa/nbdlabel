@@ -1,0 +1,124 @@
+.release-details {
+  margin-bottom: 30px;
+
+  .release-image-container {
+    margin-bottom: 20px;
+    position: relative;
+
+    img {
+      box-shadow: 1px 1px 5px $gray;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .release-info {
+    p {
+      @include nbd-body;
+
+      margin-bottom: 12px;
+
+      &.nbd-id, &.artist-title-format {
+        margin-bottom: 0;
+      }
+
+      &.artist-title-format, &.date {
+        text-transform: lowercase;
+      }
+    }
+
+    nav {
+      a {
+        font-size: 1.6rem;
+        margin-right: 8px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Media Queries */
+/* Larger than mobile */
+@media (min-width: 400px) {
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .release-details {
+    .release-image-container {
+      width: 100%;
+
+      img {
+        margin-right: auto;
+        margin-left: auto;
+        width: 400px;
+        height: 400px;
+      }
+    }
+
+    .release-info {
+      margin-left: 0;
+      padding-right: 20px;
+      padding-left: 20px;
+      width: 100%;
+    }
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .release-details {
+    .release-info {
+      padding-right: 105px;
+      padding-left: 105px;
+    }
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .release-details {
+    margin-bottom: 0;
+
+    .release-image-container {
+      margin-bottom: 0;
+      width: 48%;
+
+      img {
+        width: 320px;
+        height: 320px;
+      }
+    }
+
+    .release-info {
+      margin-left: 4%;
+      padding-right: 40px;
+      padding-left: 0;
+      width: 48%;
+    }
+  }
+}
+
+/* Larger than HD desktop */
+@media (min-width: 1200px) {
+  .release-details {
+    .release-image-container {
+      text-align: right;
+
+      img {
+        margin-right: 0;
+        margin-left: auto;
+        width: 372px;
+        height: 372px;
+      }
+    }
+
+    .release-info {
+      padding-right: 95px;
+    }
+  }
+}

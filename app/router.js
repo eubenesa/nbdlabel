@@ -8,9 +8,11 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('about');
   this.route('artists');
+  this.route('artist', { path: '/artists/:id' });
   this.route('listen');
-  this.route('contact');
   this.route('releases');
+  this.route('release', { path: '/releases/:id' });
+  this.route('contact');
 });
 
 export default Router;

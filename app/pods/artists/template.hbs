@@ -1,51 +1,14 @@
 <div class="container">
   {{nbd-header}}
 
-  <div class="page-content">
-    <section class="row artists">
-      {{#each model as |artist|}}
-        <div class="one-half column artist">
+  <section class="row artists">
+    {{#each model as |artist|}}
+      <div class="one-third column artist">
+        {{#link-to 'artist' artist}}
           <img src={{artist.photo}} alt={{artist.name}}>
-          <div class="twelve columns artist-info">
-            {{#if artist.photoBy}}
-              {{#if artist.photoByLink}}
-                <p class="photo-by">{{fa-icon icon="camera-retro"}} by <a href={{artist.photoByLink}} target="_blank">{{artist.photoBy}}</a></p>
-              {{else}}
-                <p class="photo-by">{{fa-icon icon="camera-retro"}} by {{artist.photoBy}}</p>
-              {{/if}}
-            {{/if}}
-            <p class="artist-name">{{artist.name}}</p>
-            <p>{{artist.blurb}}</p>
-            <nav>
-              {{#if artist.soundcloud}}
-                <a href={{artist.soundcloud}} target="_blank">
-                  {{fa-icon icon="soundcloud"}}
-                </a>
-              {{/if}}
-              {{#if artist.bandcamp}}
-                <a href={{artist.bandcamp}} target="_blank">
-                  <i class="icon-bandcamp"></i>
-                </a>
-              {{/if}}
-              {{#if artist.instagram}}
-                <a href={{artist.instagram}} target="_blank">
-                  {{fa-icon icon="instagram"}}
-                </a>
-              {{/if}}
-              {{#if artist.facebook}}
-                <a href={{artist.facebook}} target="_blank">
-                  {{fa-icon icon="facebook"}}
-                </a>
-              {{/if}}
-              {{#if artist.twitter}}
-                <a href={{artist.twitter}} target="_blank">
-                  {{fa-icon icon="twitter"}}
-                </a>
-              {{/if}}
-            </nav>
-          </div>
-        </div>
-      {{/each}}
-    </section>
-  </div>
+          <p>{{artist.name}}</p>
+        {{/link-to}}
+      </div>
+    {{/each}}
+  </section>
 </div>

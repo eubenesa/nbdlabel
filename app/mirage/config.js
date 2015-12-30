@@ -3,11 +3,23 @@ export default function() {
     return {
       data: db.artists.map(attrs => (
         {
+          attributes: attrs,
           id: attrs.id,
-          type: 'artists',
-          attributes: attrs
+          type: 'artists'
         }
       ))
+    };
+  });
+
+  this.get('/artists/:id', function(db, request) {
+    let id = request.params.id;
+
+    return {
+      data: {
+        attributes: db.artists.find(id),
+        id: id,
+        type: 'artists'
+      }
     };
   });
 
@@ -15,11 +27,23 @@ export default function() {
     return {
       data: db.releases.map(attrs => (
         {
+          attributes: attrs,
           id: attrs.id,
-          type: 'releases',
-          attributes: attrs
+          type: 'releases'
         }
       ))
+    };
+  });
+
+  this.get('/releases/:id', function(db, request) {
+    let id = request.params.id;
+
+    return {
+      data: {
+        attributes: db.releases.find(id),
+        id: id,
+        type: 'releases'
+      }
     };
   });
 }

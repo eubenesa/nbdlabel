@@ -4,7 +4,6 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   photo: DS.attr('string'),
   photoBy: DS.attr('string'),
-  photoByLink: DS.attr('string'),
   blurb: DS.attr('string'),
   soundcloud: DS.attr('string'),
   bandcamp: DS.attr('string'),
