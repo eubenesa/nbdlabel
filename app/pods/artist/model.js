@@ -1,13 +1,14 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  name: DS.attr('string'),
-  photo: DS.attr('string'),
-  photoBy: DS.attr('string'),
-  blurb: DS.attr('string'),
-  soundcloud: DS.attr('string'),
-  bandcamp: DS.attr('string'),
-  instagram: DS.attr('string'),
-  facebook: DS.attr('string'),
-  twitter: DS.attr('string')
+  name: DS.attr(),
+  slug: DS.attr(),
+  photo: DS.attr(),
+  photoBy: DS.attr(),
+  blurb: DS.attr(),
+  soundcloud: DS.attr(),
+  bandcamp: DS.attr(),
+  instagram: DS.attr(),
+  facebook: DS.attr(),
+  twitter: DS.attr()
 });

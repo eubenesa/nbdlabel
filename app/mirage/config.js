@@ -11,13 +11,15 @@ export default function() {
     };
   });
 
-  this.get('/artists/:id', function(db, request) {
-    let id = request.params.id;
+  this.get('/artists/:slug', function(db, request) {
+    let slug = request.params.slug;
+
+    let [ artist ] = db.artists.where({ slug });
 
     return {
       data: {
-        attributes: db.artists.find(id),
-        id: id,
+        attributes: artist,
+        id: artist.id,
         type: 'artists'
       }
     };
@@ -35,15 +37,27 @@ export default function() {
     };
   });
 
-  this.get('/releases/:id', function(db, request) {
-    let id = request.params.id;
+  this.get('/releases/:slug', function(db, request) {
+    let slug = request.params.slug;
+
+    let [ release ] = db.releases.where({ slug });
 
     return {
       data: {
-        attributes: db.releases.find(id),
-        id: id,
+        attributes: release,
+        id: release.id,
         type: 'releases'
       }
     };
   });
+
+
+  // for debugging
+  // this.handledRequest = function(verb, path, request) {
+  //   console.log(`👊${verb} ${path}`);
+  // };
+  //
+  // this.unhandledRequest = function(verb, path, request) {
+  //   console.log(`🔥${verb} ${path}`);
+  // };
 }

@@ -2,15 +2,16 @@ import DS from 'ember-data';
 import Ember from 'ember';
 
 export default DS.Model.extend({
-  cover: DS.attr('string'),
-  artist: DS.attr('string'),
-  title: DS.attr('string'),
-  format: DS.attr('string'),
+  cover: DS.attr(),
+  artist: DS.attr(),
+  title: DS.attr(),
+  slug: DS.attr(),
+  format: DS.attr(),
   releasedAt: DS.attr('date'),
-  blurb: DS.attr('string'),
-  bandcamp: DS.attr('string'),
-  itunes: DS.attr('string'),
-  spotify: DS.attr('string'),
+  blurb: DS.attr(),
+  bandcamp: DS.attr(),
+  itunes: DS.attr(),
+  spotify: DS.attr(),
 
   nbdId: Ember.computed('id', function() {
     let id = this.get('id');
