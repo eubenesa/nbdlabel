@@ -10,7 +10,7 @@
     "Faker": "~3.0.0",
     "font-awesome": "~4.5.0",
     "jquery": "1.11.3",
-    "loader.js": "ember-cli/loader.js#3.6.1",
+    "loader.js": "3.6.1",
     "lodash": "~4.0.0",
     "modernizr": "2.8.3",
     "moment": "~2.11.1",
