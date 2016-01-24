@@ -1,4 +1,4 @@
-# [nbd label](http://nbdlabel.com) [![Dependency Status](https://gemnasium.com/eubenesa/nbdlabel.svg)](https://gemnasium.com/eubenesa/nbdlabel) [![Code Climate](https://codeclimate.com/github/eubenesa/nbdlabel/badges/gpa.svg)](https://codeclimate.com/github/eubenesa/nbdlabel)
+# [nbd label](http://nbdlabel.com) [![embadge.io](http://embadge.io/v1/badge.svg?start=2.3.0) ![Dependency Status](https://gemnasium.com/eubenesa/nbdlabel.svg)](https://gemnasium.com/eubenesa/nbdlabel) [![Code Climate](https://codeclimate.com/github/eubenesa/nbdlabel/badges/gpa.svg)](https://codeclimate.com/github/eubenesa/nbdlabel)
 This wee Ember "app" was treated to premieres on [Exclaim!](http://exclaim.ca/Music/article/avid_walker-conversations), [CKUT](http://archives.ckut.ca/128/20150803.15.00-17.00.mp3) 90.3 FM (in Montréal), [Silent Shout](http://silentshout.ca/2015/09/08/mp3-mesa-luna-dont-let-go), and [Quick Before It Melts](http://www.quickbeforeitmelts.ca/2015/09/avid-walker-sun-in-eyes/). nbd.
 
 ## License
@@ -118,4 +118,3 @@ Affirmer's express Statement of Purpose.
 
 For more information, please see
 <http://creativecommons.org/publicdomain/zero/1.0/>
-
