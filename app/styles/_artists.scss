@@ -25,12 +25,6 @@
       left: 75px;
       text-transform: lowercase;
     }
-
-    &:hover {
-      img {
-        opacity: 0.25;
-      }
-    }
   }
 }
 
@@ -75,6 +69,12 @@
 
       p {
         left: 40px;
+      }
+
+      &:hover {
+        img {
+          opacity: 0.25;
+        }
       }
     }
   }
