@@ -30,7 +30,6 @@ module.exports = function(defaults) {
   app.import('vendor/fontello/font/fontello.svg', { destDir: 'assets/fonts' });
   app.import('vendor/fontello/font/fontello.ttf', { destDir: 'assets/fonts' });
   app.import('vendor/fontello/font/fontello.woff', { destDir: 'assets/fonts' });
-  app.import('bower_components/modernizr/modernizr.js');
 
   return app.toTree();
 };
