@@ -11,5 +11,16 @@ export default [
     bandcamp: 'https://mesaluna.bandcamp.com/album/crux-ep',
     itunes: 'https://itunes.apple.com/ca/album/crux-ep/id1052990869',
     spotify: 'https://open.spotify.com/album/44brJM8rvvLJRuo0gqia6w'
+  },
+  {
+    id: 2,
+    cover: 'assets/images/plazas-empathy.png',
+    artist: 'PLAZAS',
+    title: 'Empathy',
+    slug: 'empathy',
+    format: 'BASF chrome C20 cassette',
+    'released-at': '2016-04-22T07:00:00.000Z',
+    blurb: 'PLAZAS embraces the nostalgic sounds of the past but also creates more experimental soundscapes. She combines these sonic ideas with her own pop sensibility throughout her latest EP, Empathy.<br><br>Each track, she morphs her own reality by singing intimate lyrics in front of electronic beats to create a new world; a world that defines the sound of PLAZAS. She has chosen to title the EP Empathy coming out of the frustration from her own intimate experiences where there was a lack of reaction/empathy for others.<br><br>Empathy EP was written, recorded, and produced solely by PLAZAS in Vancouver, BC over the course of 2015.',
+    bandcamp: 'https://plazasmusic.bandcamp.com/album/empathy-ep'
   }
 ];
