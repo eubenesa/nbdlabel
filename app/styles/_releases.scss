@@ -1,7 +1,4 @@
 .releases {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   margin-bottom: 30px;
 
   .release {
@@ -41,6 +38,9 @@
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .releases {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 0;
     padding-right: 5px;
     padding-left: 5px;

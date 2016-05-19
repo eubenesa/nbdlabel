@@ -12,17 +12,17 @@
       <p>{{{model.blurb}}}</p>
       <nav>
         {{#if model.bandcamp}}
-          <a href={{model.bandcamp}} target="_blank">
+          <a rel="noopener noreferrer" href={{model.bandcamp}} target="_blank">
             <i class="icon-bandcamp"></i>
           </a>
         {{/if}}
         {{#if model.itunes}}
-          <a href={{model.itunes}} target="_blank">
+          <a rel="noopener noreferrer" href={{model.itunes}} target="_blank">
             {{fa-icon icon="apple"}}
           </a>
         {{/if}}
         {{#if model.spotify}}
-          <a href={{model.spotify}} target="_blank">
+          <a rel="noopener noreferrer" href={{model.spotify}} target="_blank">
             {{fa-icon icon="spotify"}}
           </a>
         {{/if}}
