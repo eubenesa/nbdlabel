@@ -21,6 +21,8 @@ export default [
     format: 'BASF chrome C20 cassette',
     'released-at': '2016-04-22T07:00:00.000Z',
     blurb: 'PLAZAS embraces the nostalgic sounds of the past but also creates more experimental soundscapes. She combines these sonic ideas with her own pop sensibility throughout her latest EP, Empathy.<br><br>Each track, she morphs her own reality by singing intimate lyrics in front of electronic beats to create a new world; a world that defines the sound of PLAZAS. She has chosen to title the EP Empathy coming out of the frustration from her own intimate experiences where there was a lack of reaction/empathy for others.<br><br>Empathy EP was written, recorded, and produced solely by PLAZAS in Vancouver, BC over the course of 2015.',
-    bandcamp: 'https://plazasmusic.bandcamp.com/album/empathy-ep'
+    bandcamp: 'https://plazasmusic.bandcamp.com/album/empathy-ep',
+    itunes: 'https://itunes.apple.com/ca/album/empathy-ep/id1108354019',
+    spotify: 'https://open.spotify.com/album/5BWPMrGGXvWSP8Wj6fvo4g'
   }
 ];
